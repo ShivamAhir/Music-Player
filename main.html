@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music player</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="main_body">
+        <div class="header">
+            <span id="header">Music player</span>
+            <img id="logo" src="cute.jpg">
+            
+        </div>
+        <div>
+    
+            <video id="video">
+                <source  id="screen" src="songs/1.mp4" type="video/mp4">
+            </video>
+            <div id="song_name">
+                <marquee direction="left"><h2 id="title">Start Playing Songs</h2></marquee>
+            </div>
+        </div>
+        <div id="nevigation">
+            <div>
+                <input id="myProgressBar" type="range" name="range"  min="0" value="0" max="100">
+                    <span id="time"></span>
+            </div>
+            <div id="buttons">
+                <button id="changePre"><img id="prev" src="previous.png"></button>
+                <button id="play"><img id="img" src="play.png"></button>
+                <button id="changeNext"><img id="next" src="next.png"></button>
+            </div>
+        </div>
+        <h2>. . Shivam Ahir . .</h2>
+    </div>
+    
+    <script src="logic.js"></script>
+</body>
+</html>
